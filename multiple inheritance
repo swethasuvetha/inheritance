@@ -1,0 +1,26 @@
+# Base class1
+class Mother:
+	mothername = ""
+
+	def mother(self):
+		print(self.mothername)
+
+# Base class2
+
+
+class Father:
+	fathername = ""
+
+	def father(self):
+		print(self.fathername)
+
+# Derived class
+class Daughter(Mother, Father):
+	def parents(self):
+		print("Father :", self.fathername)
+		print("Mother :", self.mothername)
+
+s1 = Daughter()
+s1.fathername = "Arjunan"
+s1.mothername = "Baby"
+s1.parents()
