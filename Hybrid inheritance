@@ -1,0 +1,24 @@
+class College:
+	def func1(self):
+		print("This is in college.")
+
+
+class Student1(College):
+	def func2(self):
+		print("This is in student 1. ")
+
+
+class Student2(College):
+	def func3(self):
+		print("This is in student 2.")
+
+
+class Student3(Student1, College):
+	def func4(self):
+		print("This is in student 3.")
+
+
+# Driver's code
+object = Student3()
+object.func1()
+object.func2()
